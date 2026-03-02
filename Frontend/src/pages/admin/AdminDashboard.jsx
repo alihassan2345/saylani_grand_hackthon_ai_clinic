@@ -11,13 +11,62 @@ import AdminSystemUsage from './AdminSystemUsage';
 
 const AdminDashboard = () => (
     <Routes>
-        <Route index element={<DashboardLayout title="Admin Dashboard"><AdminOverview /></DashboardLayout>} />
-        <Route path="doctors" element={<DashboardLayout title="Manage Doctors"><ManageDoctors /></DashboardLayout>} />
-        <Route path="receptionists" element={<DashboardLayout title="Manage Receptionists"><ManageReceptionists /></DashboardLayout>} />
-        <Route path="patients" element={<DashboardLayout title="Manage Patients"><ManagePatients /></DashboardLayout>} />
-        <Route path="analytics" element={<DashboardLayout title="Analytics"><AdminAnalytics /></DashboardLayout>} />
-        <Route path="subscriptions" element={<DashboardLayout title="Subscription Plans"><AdminSubscriptions /></DashboardLayout>} />
-        <Route path="system" element={<DashboardLayout title="System Usage"><AdminSystemUsage /></DashboardLayout>} />
+        <Route 
+            index 
+            element={
+                <DashboardLayout title="Admin Dashboard">
+                    <AdminOverview />
+                </DashboardLayout>
+            } 
+        />
+        <Route 
+            path="doctors" 
+            element={
+                <DashboardLayout title="Manage Doctors">
+                    <ManageDoctors />
+                </DashboardLayout>
+            } 
+        />
+        <Route 
+            path="receptionists" 
+            element={
+                <DashboardLayout title="Manage Receptionists">
+                    <ManageReceptionists />
+                </DashboardLayout>
+            } 
+        />
+        <Route 
+            path="patients" 
+            element={
+                <DashboardLayout title="Manage Patients">
+                    <ManagePatients />
+                </DashboardLayout>
+            } 
+        />
+        <Route 
+            path="analytics" 
+            element={
+                <DashboardLayout title="Analytics">
+                    <AdminAnalytics />
+                </DashboardLayout>
+            } 
+        />
+        <Route 
+            path="subscriptions" 
+            element={
+                <DashboardLayout title="Subscription Plans">
+                    <AdminSubscriptions />
+                </DashboardLayout>
+            } 
+        />
+        <Route 
+            path="system" 
+            element={
+                <DashboardLayout title="System Usage">
+                    <AdminSystemUsage />
+                </DashboardLayout>
+            } 
+        />
     </Routes>
 );
 
